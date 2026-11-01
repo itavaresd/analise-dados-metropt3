@@ -19,12 +19,23 @@ Em ambientes industriais, paradas não planejadas geram altos custos. A análise
 4.  **Visualização:** Criação de gráficos de linha, histogramas e boxplots para identificar anomalias.
 
 ## 📈 Resultados Obtidos
-- **Insight 1:** Identificação de uma forte correlação entre a temperatura do óleo (Oil_temperature) e a corrente do motor (Motor_current) durante os períodos de maior esforço operacional.
-- **Insight 2:** Detecção de picos anômalos de pressão (TP3 e Reservoirs) que precederam as paradas não planejadas do equipamento, validando o potencial da análise para manutenção preditiva.
-- **Insight 3 (Qualidade de Dados):** Tratamento bem-sucedido de dados brutos corrompidos (ajuste de formato decimal e preenchimento de nulos), garantindo a integridade da série temporal para análises futuras.
-- **Entregável:** O notebook `01_analise_exploratoria.ipynb` contém todo o código comentado e os gráficos gerados.
-- ![Gráfico de Temperatura](reports/figures/grafico_01_temperatura.png)
 
+O projeto permitiu identificar padrões cruciais de operação e falha do equipamento. Abaixo estão as principais visualizações geradas:
+
+**Figura 1: Série Temporal de Temperatura e Pressão**
+Identificação visual de picos que coincidem com os períodos de falha do compressor.
+![Gráfico de Temperatura](reports/figures/grafico_01_temperatura.png)
+
+**Figura 2: Dispersão de Variáveis**
+Análise de correlação entre os sensores operacionais, evidenciando a relação entre as variáveis em condições normais e anômalas.
+![Gráfico de Dispersão](reports/figures/grafico_02_dispersao.png)
+
+**Figura 3: Comportamento da Corrente do Motor**
+Acompanhamento do esforço operacional do motor, auxiliando na identificação de sobrecargas antes da parada do equipamento.
+![Gráfico de Corrente do Motor](reports/figures/grafico_03_corrente_motor.png)
+
+- **Insight de Qualidade de Dados:** Tratamento bem-sucedido de dados brutos corrompidos (ajuste de formato decimal e preenchimento de nulos), garantindo a integridade da série temporal.
+- **Entregável:** O notebook `01_analise_exploratoria.ipynb` contém todo o código comentado e os gráficos interativos.
 ## 🚀 Como Executar
 1.  Clone o repositório.
 2.  Instale as dependências: `pip install pandas numpy matplotlib`
