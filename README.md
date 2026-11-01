@@ -23,6 +23,7 @@ Em ambientes industriais, paradas não planejadas geram altos custos. A análise
 - **Insight 2:** Detecção de picos anômalos de pressão (TP3 e Reservoirs) que precederam as paradas não planejadas do equipamento, validando o potencial da análise para manutenção preditiva.
 - **Insight 3 (Qualidade de Dados):** Tratamento bem-sucedido de dados brutos corrompidos (ajuste de formato decimal e preenchimento de nulos), garantindo a integridade da série temporal para análises futuras.
 - **Entregável:** O notebook `01_analise_exploratoria.ipynb` contém todo o código comentado e os gráficos gerados.
+- ![Gráfico de Temperatura](reports/figures/grafico_01_temperatura.png)
 
 ## 🚀 Como Executar
 1.  Clone o repositório.
